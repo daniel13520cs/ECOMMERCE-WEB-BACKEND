@@ -1,0 +1,1 @@
+C:\Users\chihd\Documents\GitHub\workDemo\shoppingCartReact\obj\Release\shoppingcartreact.esproj.CoreCompileInputs.cache
