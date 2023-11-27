@@ -3,6 +3,7 @@ using System.Text.Json;
 [Serializable]
 public class ProductModel
 {
+    public string Id { get; private set; }
     public string Name { get; private set; }
     public int Quantity { get; private set; }
     public string Description { get; private set; }
@@ -10,6 +11,7 @@ public class ProductModel
     public string Currency { get; private set; }
     public string ImageURL { get; private set; }
 
+    public string GetId() => Id;
     public string GetName() => Name;
     public int GetQuantity() => Quantity;
     public string GetDescription() => Description;
@@ -18,6 +20,7 @@ public class ProductModel
 
     public string GetImageURL() => ImageURL;
 
+    public void SetId(string id) => Id = id;
     public void SetName(string name) => Name = name;
     public void SetQuantity(int quantity) => Quantity = quantity;
     public void SetDescription(string description) => Description = description;
@@ -27,7 +30,7 @@ public class ProductModel
 
     public override string ToString()
     {
-        return $"ImageURL: {GetImageURL()}, Name: {GetName()}, Quantity: {GetQuantity()}, Description: {GetDescription()}, Price: {GetPrice()} {GetCurrency()}";
+        return $"Id: {GetId()},ImageURL: {GetImageURL()}, Name: {GetName()}, Quantity: {GetQuantity()}, Description: {GetDescription()}, Price: {GetPrice()} {GetCurrency()}";
     }
 
     public string ToJson()

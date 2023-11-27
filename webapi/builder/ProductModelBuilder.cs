@@ -8,6 +8,12 @@ namespace webapi.builder{
             product = new ProductModel();
         }
 
+        public ProductModelBuilder SetId(string id)
+        {
+            product.SetId(id);
+            return this;
+        }
+
         public ProductModelBuilder SetName(string name)
         {
             product.SetName(name);

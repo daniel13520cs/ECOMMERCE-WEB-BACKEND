@@ -127,6 +127,7 @@ public IList<ProductModel> GetAllProducts()
                 while (reader.Read())
                 {
                     ProductModel product = new ProductModelBuilder()
+                        .SetId(reader["id"].ToString())
                         .SetName(reader["name"].ToString())
                         .SetDescription(reader["desc"].ToString())
                         .SetPrice(reader.GetInt32("price"))

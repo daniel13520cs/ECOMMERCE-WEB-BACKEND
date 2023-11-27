@@ -29,7 +29,7 @@ public class AuthenticationController : ControllerBase
         // Validate the username and password (you should use more secure methods)
         MySqlDataAccess db = new MySqlDataAccess();
         LoginModel user = db.GetUser(login);
-        if (user == null || user.Password != login.Password) {
+        if (user == null || BCrypt.Net.BCrypt.HashPassword(login.Password) != user.Password) {
             return Unauthorized("Invalid username or password");
         }
         string sessionToken = db.GetSessionToken(login.Username);
@@ -49,6 +49,7 @@ public class AuthenticationController : ControllerBase
         if (user != null) {
             return Unauthorized("username exists");
         }
+        login.Password = BCrypt.Net.BCrypt.HashPassword(login.Password);
         db.CreateUser(login);
         return Ok();
     }
