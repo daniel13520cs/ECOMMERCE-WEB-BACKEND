@@ -33,3 +33,6 @@ bin/*
 # Visual Studio 2015
 .vs/
 publish/
+*.bin
+*.v2
+.vs/workDemo/v17/.suo
