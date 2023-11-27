@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{A6E008B2-5808-465A-A868-A61C0051071F}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "shoppingcartreact", "shoppingCartReact\shoppingcartreact.esproj", "{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +15,6 @@ Global
 		{A6E008B2-5808-465A-A868-A61C0051071F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E008B2-5808-465A-A868-A61C0051071F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6E008B2-5808-465A-A868-A61C0051071F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C8B7ABA-EF2F-4D04-847D-573D8BB5C16C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
